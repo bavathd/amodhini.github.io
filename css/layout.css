@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/*----------------------------------------------------------------------
-
-	MASTER STYLESHEET
-
-	Project:        Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-	Version:        1.0
-	Author:         KeenThemes
-	Primary use:    Corporate, Business Themes.
-	Email:			support@keenthemes.com
-	Follow: 		http://www.twitter.com/keenthemes
-	Like: 			http://www.facebook.com/keenthemes
-	Website:		http://www.keenthemes.com
-	Premium:		Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-
 -----------------------------------------------------------------------*/
 /* eg: @include user-select(none); */
 /* eg: @include rotate(45deg); */
@@ -337,7 +323,7 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
-  	[Promo Section]
+  	[mission and promo Section]
 ------------------------------------------------------------------*/
 @media (max-width: 991px) {
   .promo-section .promo-section-col {
@@ -371,9 +357,64 @@ fieldset[disabled] .btn-theme {
   .promo-section .ver-center-aligned {
     display: table-cell;
     vertical-align: middle;
+    text-align: justify;
   }
 }
 
+
+@media (max-width: 991px) {
+  .mission-section .mission-section-col {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mission-section {
+    position: relative;
+    height: 400px;
+  }
+  .mission-section .mission-section-col {
+    width: 45%;
+    margin-left: 60%;
+  }
+  .mission-section .mission-section-img-left {
+    position: absolute;
+    top: 0;
+    right: 50%;
+  }
+  .mission-section .mission-section-img-right {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  .mission-section .ver-center {
+    display: table;
+    height: 400px;
+  }
+  .mission-section .ver-center-aligned {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: justify;
+  }
+}
+
+/*------------------------------------------------------------------
+[team]
+------------------------------------------------------------------*/
+
+.team-section {
+  
+  background-color: #fff;
+  padding: 30px;
+
+}
+
+.team-section .team-title {
+  margin: auto;
+  vertical-align: top;
+  text-align: center;
+}
 /*------------------------------------------------------------------
   	[Service]
 ------------------------------------------------------------------*/
@@ -472,7 +513,11 @@ fieldset[disabled] .btn-theme {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
-
+.work .work-section-img-right {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
@@ -517,13 +562,13 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 /* Fixed Top */
 .navbar-fixed-top .navbar-collapse {
-  max-height: 100%;
+  max-height: 50%;
 }
 
 /* Navbar */
 .header .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(252, 251, 251, 0.795);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -602,22 +647,31 @@ fieldset[disabled] .btn-theme {
 
 /* Navbar Logo */
 .header .logo  {
-  width: 100px;
-  height: 100px;
+  display: block;
+  width: 10vw;
+  height: 75px;
+  margin: auto;
 }
 
 .header .logo-wrap {
   display: inline-block;
-  padding: 15px 0;
+  padding: 3px;
+  text-align: left;
+  margin: auto;
+  width:100%;
+  
+ 
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
   text-decoration: none;
 }
 
-.header .cName {
-  font-size: 20px;
-  color: rgb(255, 255, 255);
+.header  .cName {
+  font-size: 10px;
+  text-align: center;
+  text-decoration: solid;
+  color: rgba(255, 255, 255,1);
   font-family: Hind, sans-serif;
 }
 
@@ -627,7 +681,12 @@ fieldset[disabled] .btn-theme {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
-
+.header .cName img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 25%;
+}
 .header .logo-img-active {
   display: none;
   transition-duration: 400ms;
@@ -704,7 +763,7 @@ fieldset[disabled] .btn-theme {
   /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
   .header {
-    background: rgb(112, 112, 112);
+    background: rgba(112, 112, 112,0.5);
   }
   .header .navbar-toggle {
     display: block;
@@ -788,7 +847,7 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: rgb(125, 124, 124);
+    background: rgba(125, 124, 124,0.5);
     border-bottom-color: #1a1a1a;
     transition-duration: 300ms;
     transition-property: all;
@@ -1174,7 +1233,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-heading {
-  background: #515769;
+  background: #6784e2;
 }
 
 .bg-color-subtitle {
