@@ -649,8 +649,9 @@ fieldset[disabled] .btn-theme {
 .header .logo  {
   display: block;
   width: 10vw;
-  height: 10vh;
+  height: 12vh;
   margin: auto;
+  padding: 10px;
 }
 
 .header .logo-wrap {
@@ -794,11 +795,15 @@ fieldset[disabled] .btn-theme {
     clear: both;
   }
   /* Logo */
-  .header .logo .logo-img-main {
-    display: none;
-  }
-  .header .logo .logo-img-active {
-    display: inline-block;
+
+  .header .logo {
+    
+    display: block;
+  width: 10vw;
+  height: 14vh;
+  margin: auto;
+  padding: 5px;
+
   }
   /* Navbar Nav */
   .header .nav-item-child {
