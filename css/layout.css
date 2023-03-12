@@ -648,10 +648,10 @@ fieldset[disabled] .btn-theme {
 /* Navbar Logo */
 .header .logo  {
   display: block;
-  width: 10vw;
-  height: 12vh;
+  width: 100px;
+  height: 100px;
   margin: auto;
-  padding: 10px;
+  padding:15px;
 }
 
 .header .logo-wrap {
@@ -686,7 +686,13 @@ fieldset[disabled] .btn-theme {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 25%;
+  width: 30%;
+}
+.header .cName img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
 }
 .header .logo-img-active {
   display: none;
@@ -795,15 +801,11 @@ fieldset[disabled] .btn-theme {
     clear: both;
   }
   /* Logo */
-
-  .header .logo {
-    
-    display: block;
-  width: 10vw;
-  height: 14vh;
-  margin: auto;
-  padding: 5px;
-
+  .header .logo .logo-img-main {
+    display: none;
+  }
+  .header .logo .logo-img-active {
+    display: inline-block;
   }
   /* Navbar Nav */
   .header .nav-item-child {
@@ -816,10 +818,10 @@ fieldset[disabled] .btn-theme {
     top: 19px;
   }
 }
-/*
-Media Queries below 767px 
+
+/* Media Queries below 767px */
 @media (max-width: 767px) {
-   Menu Container 
+  /* Menu Container */
   .header .menu-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -840,7 +842,7 @@ Media Queries below 767px
     margin-right: 0;
   }
 }
-*/
+
 /* Media Queries above 992px */
 @media (min-width: 992px) {
   /* Navbar */
