@@ -560,296 +560,88 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Header]
 ------------------------------------------------------------------*/
-/* Fixed Top */
-.navbar-fixed-top .navbar-collapse {
-  max-height: 50%;
-}
 
-/* Navbar */
-.header .navbar {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(252, 251, 251, 0.795);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
 
-/* Navbar Toggle */
-.header .navbar-toggle {
-  width: 25px;
-  height: 25px;
+.navbar-header {
+  float: none;
+}
+.navbar-header .navbar-brand {
+   color:#ffffff;
+   background-color: rgba(16,16,16,0.5);
+   
+}
+.navbar .navabar-header button {
+  width:50px;
+  height:50px;
+  background-color: rgba(16,16,16,0.5); 
+}
+.modal-fullscreen-menu .close {
+  color: white;
+  opacity: 1;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 5vh;
+}
+.modal-fullscreen-menu .modal-dialog {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.modal-fullscreen-menu .modal-content {
+  background-color: transparent;
+  box-shadow: none;
   border: none;
-  padding: 0;
-  margin: 35px 0;
 }
-
-.header .navbar-toggle .toggle-icon {
-  position: relative;
-  width: 21px;
-  height: 1px;
-  display: inline-block;
-  background: #515769;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
-  position: absolute;
-  left: 0;
-  background: #515769;
-  content: " ";
-}
-
-.header .navbar-toggle .toggle-icon:before {
-  width: 10px;
-  height: 1px;
-  bottom: 10px;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  transform: rotate(0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .navbar-toggle .toggle-icon:after {
-  width: 16px;
-  height: 1px;
-  top: -5px;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  transform: rotate(0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .navbar-toggle:hover .toggle-icon {
-  background: #17bed2;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
-  width: 21px;
-  height: 1px;
-  background: #17bed2;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .navbar-toggle:hover .toggle-icon.is-clicked {
-  background: rgba(81, 87, 105, 0);
-}
-
-/* Navbar Logo */
-.header .logo  {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  padding:15px;
-}
-
-.header .logo-wrap {
-  display: inline-block;
-  padding: 3px;
-  text-align: left;
-  margin: auto;
-  width:100%;
-  
- 
-}
-
-.header .logo-wrap:focus, .header .logo-wrap:hover {
-  text-decoration: none;
-}
-
-.header  .cName {
-  font-size: 10px;
+.modal-fullscreen-menu .list-group {
   text-align: center;
-  text-decoration: solid;
-  color: rgba(255, 255, 255,1);
-  font-family: Hind, sans-serif;
+  margin: 0 auto;
+  width: 100%;
 }
-
-.header .cName {
-  display: inline-block;
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.modal-fullscreen-menu .list-group a {
+  font-size: 200%;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  border: none;
+  transition: all 0.25s ease;
+  background-color: transparent;
+  color: white;
+  padding: 7.5vh 0;
+  height: 5vh;
+  font-size: 5vh;
+  line-height: 0;
 }
-.header .cName img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 30%;
-}
-.header .cName img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 30%;
-}
-.header .logo-img-active {
-  display: none;
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-/* Navbar */
-.header .navbar-nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-/* Nav */
-.header .nav-item {
-  position: relative;
-  display: block;
-}
-
-.header .nav-item:last-child .nav-item-child {
-  padding-right: 0;
-}
-
-.header .nav-item .nav-item-hover.active:after {
-  opacity: 1;
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .nav-item:hover .nav-item-hover:after {
-  opacity: 1;
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .nav-item-child {
-  position: relative;
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  font-family: Hind, sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 55px;
-  padding: 20px;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.header .nav-item-hover {
-  position: relative;
-}
-
-.header .nav-item-hover:after {
+.modal-fullscreen-menu .list-group a:before {
+  content: "";
   position: absolute;
-  top: 45px;
+  top: 0;
   left: 0;
-  width: 9px;
-  height: 2px;
-  background: #17bed2;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
   opacity: 0;
-  content: " ";
-  transition-duration: 400ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  transform: scale3d(0.7, 1, 1);
+  transition: transform 0.4s, opacity 0.4s;
+}
+.modal-fullscreen-menu .list-group a:hover {
+  color: black;
+}
+.modal-fullscreen-menu .list-group a:hover:before {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
-/* Media Queries below 991px */
-@media (max-width: 991px) {
-  /* Bootstrap collapse of navigation with a maximum width: 991px
-    (Change it to any breakpoint you want to be collapsed) */
-  .header {
-    background: rgba(112, 112, 112,0.5);
-  }
-  .header .navbar-toggle {
-    display: block;
-  }
-  .header .navbar-collapse.collapse {
-    display: none !important;
-  }
-  .header .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-  .header .nav-collapse {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .header .navbar-nav {
-    margin: 0;
-    float: none;
-  }
-  .header .navbar-nav .nav-item {
-    float: none;
-  }
-  /* Menu Container */
-  .header .menu-container:before, .header .menu-container:after {
-    content: " ";
-    display: table;
-  }
-  .header .menu-container:after {
-    clear: both;
-  }
-  /* Logo */
-  .header .logo .logo-img-main {
-    display: none;
-  }
-  .header .logo .logo-img-active {
-    display: inline-block;
-  }
-  /* Navbar Nav */
-  .header .nav-item-child {
-    color: #515769;
-    line-height: 1.4;
-    padding: 12px 12px 12px 15px;
-  }
-  .header .nav-item-hover:after {
-    position: absolute;
-    top: 19px;
-  }
+.modal-backdrop.in {
+  opacity: 1;
+
 }
 
-/* Media Queries below 767px */
-@media (max-width: 767px) {
-  /* Menu Container */
-  .header .menu-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .header .navbar > .container {
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .header .navbar > .container > .nav-collapse {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* Media Queries above 992px */
-@media (min-width: 992px) {
-  /* Navbar */
-  .header .navbar-nav-right {
-    float: right;
-  }
-}
 
 /* Page On Scroll */
 @media (min-width: 992px) {
@@ -1026,7 +818,7 @@ fieldset[disabled] .btn-theme {
 
 @media (max-width: 768px) {
   .carousel-title {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 

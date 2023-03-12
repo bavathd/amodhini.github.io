@@ -30,31 +30,35 @@
     <!-- BODY -->
     <body>
 
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container">
-                        <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
+        <nav class='navbar  navbar-fixed-top'>
+            <div class='container-fluid'>
+              <div class='navbar-header'>
+                <a class='navbar-brand' href='#'>AMODHINI Constructions</a>
+                <button class='btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button'>
+                  <span class='sr-only'>Open navigation</span>
+                  <span class='glyphicon glyphicon-menu-hamburger'></span>
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+            <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+              <span class='sr-only'>Close navigation</span>
+              <span class='glyphicon glyphicon-remove'></span>
+            </button>
+            <div class='modal-dialog'>
+              <nav class='list-group'>
+                <a class='list-group-item' href='#'>Home</a>
+                <a class='list-group-item' href='#'>Services</a>
+                <a class='list-group-item' href='#'>Meet the Team</a>
+                <a class='list-group-item' href='#'>Careers</a>
+                <a class='list-group-item' href='#'>Contact Us</a>
+              </nav>
+            </div>
+          </div>
+      
 
-                        <Logo -->
-                        <div class="logo">
-                            <a class="logo-wrap" href="index.html">
-                                <h2 class="cName"> <img id="logo-imgs" src="./img/logo.png"> AMODHINI INFRASTRUCTURE PVT LTD</h2>
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
-
-                   
-                    
-            <!-- Navbar -->
-        </header>
+       
         <!--========== END HEADER ==========-->
 
         <!--========== SLIDER ==========-->
@@ -69,14 +73,13 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+                  <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
-                                <h1 class="carousel-title">AMODHINI INFRASTRUCTURES</h1>
-                                <h3 class=" h4 color-white font-weight-light">Our vision is to curve the way to your heart and your home...<br><br>
-                                    As our motto stands out: "Trust, Commitment, Service".
+                                <h2 class="carousel-title">AMODHINI Constructions</h2>
+                                <h3 class=" h5 color-white font-italic"> We construct client-based specifics, environment-friendly infrastructure, and technology-equipped designs. 
                                 </h3>
                             </div>
                             <!--a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a-->
