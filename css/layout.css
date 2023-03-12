@@ -816,10 +816,10 @@ fieldset[disabled] .btn-theme {
     top: 19px;
   }
 }
-
-/* Media Queries below 767px */
+/*
+Media Queries below 767px 
 @media (max-width: 767px) {
-  /* Menu Container */
+   Menu Container 
   .header .menu-container {
     padding-left: 15px;
     padding-right: 15px;
@@ -840,7 +840,7 @@ fieldset[disabled] .btn-theme {
     margin-right: 0;
   }
 }
-
+*/
 /* Media Queries above 992px */
 @media (min-width: 992px) {
   /* Navbar */
