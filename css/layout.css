@@ -568,13 +568,19 @@ fieldset[disabled] .btn-theme {
 .navbar-header .navbar-brand {
    color:#ffffff;
    background-color: rgba(16,16,16,0.5);
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
    
 }
-.navbar .navabar-header button {
+.navbar .navbar-header button {
+  
   width:50px;
   height:50px;
-  background-color: rgba(16,16,16,0.5); 
+  border-radius: 10%;
+  background-color: rgba(16,16,16,1); 
+  
+  
 }
+
 .modal-fullscreen-menu .close {
   color: white;
   opacity: 1;
@@ -662,6 +668,48 @@ fieldset[disabled] .btn-theme {
   font-size: 13px;
   color: #81848f;
   margin-bottom: 10px;
+}
+/*------------------------------------------------------------
+    [Team Design]
+------------------------------------------------------------*/
+.team-section {
+  box-shadow: rgba(149, 157, 165, 0.2) 2px 8px 24px;
+}
+
+.team-section .card img {
+  width: 30%;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.team-section .card .card-block .card-title {
+  padding: 5px;
+  
+}
+.team-section .card .card-text {
+  padding: 5px;
+  
+  
+}
+
+@media (min-width: 992px) {
+  .team-section .card img {
+    width: 70%;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px;
+  }
+  
+}
+
+/*------------------------------------------------------------
+    [Services]
+------------------------------------------------------------*/
+
+.Services {
+
+  width: 100%;
+  height: 100%;
+  
+
 }
 
 /*--------------------------------------------------
